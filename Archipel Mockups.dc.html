@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics><meta name="design_doc_mode" content="canvas"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><style>body{margin:0;background:#E7E4DC;font-family:'Work Sans',system-ui,sans-serif}a{color:oklch(0.5 0.12 150);text-decoration:none}a:hover{color:oklch(0.42 0.12 150)}.dv-turn{padding:40px 44px 32px;border-bottom:1px solid rgba(26,26,24,.09);scroll-margin-top:16px}.dv-thd{display:flex;align-items:baseline;gap:10px;margin:0 0 20px}.dv-tid{font:500 10px 'JetBrains Mono',monospace;padding:3px 7px;background:#1A1A18;color:#F4F2ED;border-radius:4px;text-decoration:none}.dv-tname{font:600 13px/1.2 'Work Sans',sans-serif;color:#1A1A18}.dv-opts{display:flex;flex-wrap:wrap;gap:32px;align-items:flex-start}.dv-opt{flex:none;display:flex;flex-direction:column;gap:9px;scroll-margin-top:16px}.dv-oid{font:500 10.5px 'JetBrains Mono',monospace;padding:3px 7px;background:rgba(26,26,24,.09);color:#1A1A18;border-radius:5px;text-decoration:none}.dv-olabel{display:flex;align-items:baseline;gap:8px;font:400 11px/1.3 'Work Sans',sans-serif;color:rgba(26,26,24,.55)}.dv-card{max-width:100%;background:#F7F5F0;border:1px solid rgba(26,26,24,.1);border-radius:10px;box-shadow:0 2px 4px rgba(26,26,24,.05),0 18px 40px -24px rgba(26,26,24,.3);overflow:hidden}.dv-opt:target .dv-oid{background:oklch(0.55 0.13 150);color:#fff}.dv-next{margin:22px 0 0;font:12px/1.5 'Work Sans',sans-serif;color:rgba(26,26,24,.5)}</style></helmet>
+
+<section class="dv-turn" id="t2">
+<div class="dv-thd"><a class="dv-tid" href="#t2">2</a><span class="dv-tname">Base sombre chaude #1C1B19 (votre choix) — même système que <a class="dv-oid" href="#1a">1a</a>, accent vert relevé pour le contraste</span></div>
+<div class="dv-opts">
+<div class="dv-opt" id="2a">
+<div class="dv-olabel"><a class="dv-oid" href="#2a">2a</a>Écran principal, base sombre chaude — arborescence + canevas infini (1440 × 900)</div>
+<div class="dv-card" style="width:1440px;height:900px;display:flex;background:#1C1B19">
+
+  <aside style="width:258px;flex:none;background:#191816;border-right:1px solid rgba(240,236,228,.09);display:flex;flex-direction:column">
+    <div style="padding:16px 16px 12px;display:flex;align-items:center;gap:9px">
+      <div style="width:20px;height:20px;border-radius:5px;background:oklch(0.72 0.12 150);box-shadow:inset 0 0 0 3px rgba(255,255,255,.55)"></div>
+      <div style="font:700 15px/1 'Bricolage Grotesque','Work Sans',sans-serif;letter-spacing:-.01em;color:#EFEBE3">Archipel</div>
+      <div style="margin-left:auto;font:400 9px/1 'JetBrains Mono',monospace;color:rgba(240,236,228,.4);border:1px solid rgba(240,236,228,.14);border-radius:4px;padding:3px 5px">LOCAL</div>
+    </div>
+    <div style="padding:0 12px 12px">
+      <div style="display:flex;align-items:center;gap:8px;height:32px;padding:0 10px;background:#1C1B19;border:1px solid rgba(240,236,228,.1);border-radius:7px">
+        <div style="width:11px;height:11px;border:1.5px solid rgba(240,236,228,.35);border-radius:50%"></div>
+        <span style="font:400 12.5px/1 'Work Sans',sans-serif;color:rgba(240,236,228,.4)">Rechercher…</span>
+        <span style="margin-left:auto;font:400 9.5px/1 'JetBrains Mono',monospace;color:rgba(240,236,228,.32)">⌘K</span>
+      </div>
+    </div>
+    <div style="flex:1;overflow:hidden;padding:0 8px;display:flex;flex-direction:column;gap:1px">
+      <div style="font:500 9.5px/1 'JetBrains Mono',monospace;letter-spacing:.08em;color:rgba(240,236,228,.35);padding:10px 8px 6px">ESPACE DE TRAVAIL</div>
+
+      <div style="display:flex;align-items:center;gap:7px;height:29px;padding:0 8px;border-radius:6px;color:#D6D2C9" style-hover="background:rgba(240,236,228,.05)">
+        <span style="font:400 8px/1 'JetBrains Mono',monospace;color:rgba(240,236,228,.4);width:8px">▾</span>
+        <div style="width:12px;height:10px;border-radius:2px;background:rgba(240,236,228,.22)"></div>
+        <span style="font:500 12.5px/1 'Work Sans',sans-serif">Licence 2 — Bio</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:7px;height:29px;padding:0 8px 0 23px;border-radius:6px;color:#D6D2C9" style-hover="background:rgba(240,236,228,.05)">
+        <span style="font:400 8px/1 'JetBrains Mono',monospace;color:rgba(240,236,228,.4);width:8px">▾</span>
+        <div style="width:12px;height:10px;border-radius:2px;background:rgba(240,236,228,.22)"></div>
+        <span style="font:500 12.5px/1 'Work Sans',sans-serif">Neurosciences</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:7px;height:29px;padding:0 8px 0 46px;border-radius:6px;background:#1C1B19;box-shadow:inset 0 0 0 1px rgba(240,236,228,.08);color:#EFEBE3">
+        <div style="width:11px;height:11px;border-radius:3px;background:oklch(0.72 0.12 150 / 0.2);box-shadow:inset 0 0 0 1.5px oklch(0.72 0.12 150 / 0.55)"></div>
+        <span style="font:600 12.5px/1 'Work Sans',sans-serif">Système nerveux</span>
+        <span style="margin-left:auto;font:400 9.5px/1 'JetBrains Mono',monospace;color:rgba(240,236,228,.35)">14</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:7px;height:29px;padding:0 8px 0 46px;border-radius:6px;color:#D6D2C9" style-hover="background:rgba(240,236,228,.05)">
+        <div style="width:11px;height:11px;border-radius:3px;box-shadow:inset 0 0 0 1.5px rgba(240,236,228,.28)"></div>
+        <span style="font:500 12.5px/1 'Work Sans',sans-serif">Histologie</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:7px;height:29px;padding:0 8px 0 46px;border-radius:6px;color:#D6D2C9" style-hover="background:rgba(240,236,228,.05)">
+        <div style="width:11px;height:11px;border-radius:3px;box-shadow:inset 0 0 0 1.5px rgba(240,236,228,.28)"></div>
+        <span style="font:500 12.5px/1 'Work Sans',sans-serif">Fiches de révision</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:7px;height:29px;padding:0 8px 0 23px;border-radius:6px;color:#D6D2C9" style-hover="background:rgba(240,236,228,.05)">
+        <span style="font:400 8px/1 'JetBrains Mono',monospace;color:rgba(240,236,228,.4);width:8px">▸</span>
+        <div style="width:12px;height:10px;border-radius:2px;background:rgba(240,236,228,.22)"></div>
+        <span style="font:500 12.5px/1 'Work Sans',sans-serif">Biochimie</span>
+      </div>
+      <div style="height:2px;margin:6px 8px;background:rgba(240,236,228,.07);border-radius:1px"></div>
+      <div style="display:flex;align-items:center;gap:7px;height:29px;padding:0 8px;border-radius:6px;color:#D6D2C9" style-hover="background:rgba(240,236,228,.05)">
+        <span style="width:8px"></span>
+        <div style="width:12px;height:10px;border-radius:2px;background:rgba(240,236,228,.22)"></div>
+        <span style="font:500 12.5px/1 'Work Sans',sans-serif">Projets perso</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:7px;height:29px;padding:0 8px;border-radius:6px;color:rgba(240,236,228,.45)" style-hover="background:rgba(240,236,228,.05)">
+        <span style="width:8px"></span>
+        <div style="width:12px;height:10px;border-radius:2px;box-shadow:inset 0 0 0 1.5px rgba(240,236,228,.2)"></div>
+        <span style="font:500 12.5px/1 'Work Sans',sans-serif">Corbeille</span>
+      </div>
+    </div>
+    <div style="padding:10px 16px 14px;border-top:1px solid rgba(240,236,228,.08);display:flex;align-items:center;gap:7px">
+      <div style="width:6px;height:6px;border-radius:50%;background:oklch(0.72 0.12 150)"></div>
+      <span style="font:400 10px/1 'JetBrains Mono',monospace;color:rgba(240,236,228,.45)">SQLite · sauvegardé 12:04</span>
+    </div>
+  </aside>
+
+  <div style="flex:1;display:flex;flex-direction:column;min-width:0">
+    <header style="height:52px;flex:none;display:flex;align-items:center;gap:12px;padding:0 18px;background:#1C1B19;border-bottom:1px solid rgba(240,236,228,.09)">
+      <span style="font:400 11.5px/1 'Work Sans',sans-serif;color:rgba(240,236,228,.42)">Licence 2 — Bio / Neurosciences /</span>
+      <span style="font:700 16px/1 'Bricolage Grotesque','Work Sans',sans-serif;letter-spacing:-.01em;color:#EFEBE3">Système nerveux</span>
+      <div style="margin-left:auto;display:flex;align-items:center;gap:6px">
+        <div style="display:flex;align-items:center;gap:6px;height:29px;padding:0 11px;border:1px solid rgba(240,236,228,.12);border-radius:7px;font:500 11.5px/1 'Work Sans',sans-serif;color:#D6D2C9" style-hover="background:rgba(240,236,228,.04)">Exporter</div>
+        <div style="display:flex;align-items:center;gap:6px;height:29px;padding:0 11px;border-radius:7px;background:#EFEBE3;color:#1C1B19;font:500 11.5px/1 'Work Sans',sans-serif">＋ Carte</div>
+      </div>
+    </header>
+
+    <div style="position:relative;flex:1;overflow:hidden;background:#1C1B19">
+      <div style="position:absolute;inset:0;background:{{ gridBgDark }};background-size:22px 22px"></div>
+
+      <svg viewBox="0 0 1180 848" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none">
+        <defs><marker id="arw" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M1,1 L6,4 L1,7" fill="none" stroke="#6E6A62" stroke-width="1.4" stroke-linecap="round"></path></marker></defs>
+        <path d="M288,180 C 420,180 480,132 610,136" fill="none" stroke="#6E6A62" stroke-width="1.6" marker-end="url(#arw)"></path>
+        <path d="M536,236 C 570,236 580,296 610,300" fill="none" stroke="#6E6A62" stroke-width="1.6" marker-end="url(#arw)"></path>
+        <path d="M348,524 C 470,524 500,500 610,500" fill="none" stroke="oklch(0.72 0.12 150)" stroke-width="1.8" marker-end="url(#arw)"></path>
+        <path d="M892,214 C 906,214 912,204 922,204" fill="none" stroke="#6E6A62" stroke-width="1.6" stroke-dasharray="4 4" marker-end="url(#arw)"></path>
+      </svg>
+
+      <sc-if value="{{ showEdgeLabels }}" hint-placeholder-val="{{ true }}">
+        <div style="position:absolute;left:452px;top:487px;padding:3px 7px;background:#1C1B19;border:1px solid oklch(0.72 0.12 150 / 0.35);border-radius:5px;font:500 9.5px/1 'JetBrains Mono',monospace;color:oklch(0.8 0.11 150)">détaille</div>
+      </sc-if>
+
+      <div style="position:absolute;left:40px;top:56px;width:520px;height:336px;border:1.5px dashed rgba(240,236,228,.18);border-radius:14px;background:rgba(240,236,228,.025)">
+        <div style="position:absolute;top:-11px;left:14px;display:flex;align-items:center;gap:7px;padding:3px 9px;background:#1C1B19;border:1px solid rgba(240,236,228,.12);border-radius:6px">
+          <div style="width:7px;height:7px;border-radius:2px;background:rgba(240,236,228,.3)"></div>
+          <span style="font:600 10.5px/1 'Work Sans',sans-serif;color:#D6D2C9">Cours 4 — Moelle épinière</span>
+        </div>
+      </div>
+
+      <div style="position:absolute;left:64px;top:108px;width:224px;height:156px;background:#232220;border:1px solid rgba(240,236,228,.11);border-radius:10px;box-shadow:0 1px 2px rgba(0,0,0,.05),0 8px 20px -14px rgba(0,0,0,.3);display:flex;flex-direction:column;overflow:hidden">
+        <div style="display:flex;align-items:center;gap:7px;padding:8px 10px;border-bottom:1px solid rgba(240,236,228,.07)">
+          <div style="width:14px;height:14px;border-radius:4px;background:rgba(240,236,228,.08);display:flex;align-items:center;justify-content:center;font:500 8px/1 'JetBrains Mono',monospace;color:rgba(240,236,228,.5)">N</div>
+          <span style="font:600 11.5px/1 'Work Sans',sans-serif;color:#D6D2C9">Voies ascendantes</span>
+        </div>
+        <div style="padding:9px 11px;display:flex;flex-direction:column;gap:6px">
+          <p style="margin:0;font:400 11.5px/1.5 'Work Sans',sans-serif;color:#BEB9AF;text-wrap:pretty">Faisceau <strong style="font-weight:600">spinothalamique</strong> : douleur et température, décussation immédiate.</p>
+          <p style="margin:0;font:400 11.5px/1.5 'Work Sans',sans-serif;color:#BEB9AF;text-wrap:pretty">Cordons postérieurs : tact fin, proprioception.</p>
+        </div>
+      </div>
+
+      <div style="position:absolute;left:312px;top:108px;width:224px;height:246px;background:#232220;border:1px solid rgba(240,236,228,.11);border-radius:10px;box-shadow:0 1px 2px rgba(0,0,0,.05),0 8px 20px -14px rgba(0,0,0,.3);display:flex;flex-direction:column;overflow:hidden">
+        <div style="display:flex;align-items:center;gap:7px;padding:8px 10px;border-bottom:1px solid rgba(240,236,228,.07)">
+          <div style="width:14px;height:14px;border-radius:4px;background:oklch(0.72 0.12 150 / 0.14);display:flex;align-items:center;justify-content:center;font:500 8px/1 'JetBrains Mono',monospace;color:oklch(0.8 0.11 150)">T</div>
+          <span style="font:600 11.5px/1 'Work Sans',sans-serif;color:#D6D2C9">Avant le partiel</span>
+          <span style="margin-left:auto;font:400 9.5px/1 'JetBrains Mono',monospace;color:rgba(240,236,228,.4)">2/5</span>
+        </div>
+        <div style="padding:8px 10px;display:flex;flex-direction:column;gap:2px">
+          <div style="display:flex;align-items:flex-start;gap:8px;padding:5px 4px"><div style="width:13px;height:13px;flex:none;border-radius:4px;background:oklch(0.72 0.12 150);display:flex;align-items:center;justify-content:center;color:#fff;font:600 9px/1 'Work Sans',sans-serif">✓</div><span style="font:400 11.5px/1.35 'Work Sans',sans-serif;color:rgba(240,236,228,.4);text-decoration:line-through">Relire le CM 3</span></div>
+          <div style="display:flex;align-items:flex-start;gap:8px;padding:5px 4px"><div style="width:13px;height:13px;flex:none;border-radius:4px;background:oklch(0.72 0.12 150);display:flex;align-items:center;justify-content:center;color:#fff;font:600 9px/1 'Work Sans',sans-serif">✓</div><span style="font:400 11.5px/1.35 'Work Sans',sans-serif;color:rgba(240,236,228,.4);text-decoration:line-through">Schéma des cordons</span></div>
+          <div style="display:flex;align-items:flex-start;gap:8px;padding:5px 4px"><div style="width:13px;height:13px;flex:none;border-radius:4px;box-shadow:inset 0 0 0 1.5px rgba(240,236,228,.24)"></div><span style="font:400 11.5px/1.35 'Work Sans',sans-serif;color:#D6D2C9">Annales 2023 — QCM 1 à 20</span></div>
+          <div style="display:flex;align-items:flex-start;gap:8px;padding:5px 4px"><div style="width:13px;height:13px;flex:none;border-radius:4px;box-shadow:inset 0 0 0 1.5px rgba(240,236,228,.24)"></div><span style="font:400 11.5px/1.35 'Work Sans',sans-serif;color:#D6D2C9">Fiche synapse (recto/verso)</span></div>
+          <div style="display:flex;align-items:flex-start;gap:8px;padding:5px 4px"><div style="width:13px;height:13px;flex:none;border-radius:4px;box-shadow:inset 0 0 0 1.5px rgba(240,236,228,.24)"></div><span style="font:400 11.5px/1.35 'Work Sans',sans-serif;color:#D6D2C9">TD réflexe myotatique</span></div>
+          <div style="display:flex;align-items:center;gap:8px;padding:6px 4px;font:400 11.5px/1 'Work Sans',sans-serif;color:rgba(240,236,228,.35)"><span style="width:13px;text-align:center">＋</span>Ajouter une tâche</div>
+        </div>
+      </div>
+
+      <div style="position:absolute;left:616px;top:44px;width:276px;height:348px;background:#232220;border:1px solid rgba(240,236,228,.11);border-radius:10px;box-shadow:0 1px 2px rgba(0,0,0,.05),0 8px 20px -14px rgba(0,0,0,.3);display:flex;flex-direction:column;overflow:hidden">
+        <div style="display:flex;align-items:center;gap:7px;padding:8px 10px;border-bottom:1px solid rgba(240,236,228,.07)">
+          <div style="width:14px;height:14px;border-radius:4px;background:rgba(180,85,42,.14);display:flex;align-items:center;justify-content:center;font:500 8px/1 'JetBrains Mono',monospace;color:#DE9A65">P</div>
+          <span style="font:600 11.5px/1 'Work Sans',sans-serif;color:#D6D2C9">poly_neuro_ch3.pdf</span>
+          <span style="margin-left:auto;font:400 9.5px/1 'JetBrains Mono',monospace;color:rgba(240,236,228,.4)">p. 12/48</span>
+        </div>
+        <div style="flex:1;padding:10px;background:rgba(240,236,228,.045);display:flex;align-items:stretch">
+          <div style="flex:1;background:#2B2A27;border:1px solid rgba(240,236,228,.09);border-radius:3px;padding:14px 16px;display:flex;flex-direction:column;gap:7px">
+            <div style="height:9px;width:62%;background:rgba(240,236,228,.2);border-radius:2px"></div>
+            <div style="height:5px;width:100%;background:rgba(240,236,228,.1);border-radius:2px"></div>
+            <div style="height:5px;width:96%;background:rgba(240,236,228,.1);border-radius:2px"></div>
+            <div style="height:5px;width:88%;background:rgba(240,236,228,.1);border-radius:2px"></div>
+            <div style="height:74px;margin:5px 0;background:repeating-linear-gradient(135deg,rgba(240,236,228,.09) 0 6px,transparent 6px 12px);border:1px solid rgba(240,236,228,.1);border-radius:3px;display:flex;align-items:center;justify-content:center;font:400 8.5px/1 'JetBrains Mono',monospace;color:rgba(240,236,228,.4)">figure 3.4</div>
+            <div style="height:5px;width:100%;background:rgba(240,236,228,.1);border-radius:2px"></div>
+            <div style="height:5px;width:91%;background:rgba(240,236,228,.1);border-radius:2px"></div>
+            <div style="height:5px;width:78%;background:rgba(240,236,228,.1);border-radius:2px"></div>
+            <div style="height:5px;width:94%;background:rgba(240,236,228,.1);border-radius:2px"></div>
+            <div style="height:5px;width:40%;background:rgba(240,236,228,.1);border-radius:2px"></div>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:center;gap:10px;padding:7px;border-top:1px solid rgba(240,236,228,.07);font:400 10px/1 'JetBrains Mono',monospace;color:rgba(240,236,228,.45)"><span>‹</span><span>12</span><span>›</span><span style="color:rgba(240,236,228,.2)">|</span><span>surligner</span></div>
+      </div>
+
+      <div style="position:absolute;left:616px;top:424px;width:296px;height:210px;background:#232220;border:1px solid rgba(240,236,228,.11);border-radius:10px;box-shadow:0 1px 2px rgba(0,0,0,.05),0 8px 20px -14px rgba(0,0,0,.3);display:flex;flex-direction:column;overflow:hidden">
+        <div style="display:flex;align-items:center;gap:7px;padding:8px 10px;border-bottom:1px solid rgba(240,236,228,.07)">
+          <div style="width:14px;height:14px;border-radius:4px;background:rgba(240,236,228,.08);display:flex;align-items:center;justify-content:center;font:500 8px/1 'JetBrains Mono',monospace;color:rgba(240,236,228,.5)">N</div>
+          <span style="font:600 11.5px/1 'Work Sans',sans-serif;color:#D6D2C9">Résumé — la synapse chimique</span>
+        </div>
+        <div style="padding:10px 12px;display:flex;flex-direction:column;gap:7px">
+          <p style="margin:0;font:400 11.5px/1.55 'Work Sans',sans-serif;color:#BEB9AF;text-wrap:pretty">Le potentiel d'action ouvre les canaux Ca²⁺ voltage-dépendants du bouton présynaptique.</p>
+          <div style="padding:7px 10px;border-left:2px solid oklch(0.72 0.12 150);background:oklch(0.72 0.12 150 / 0.07);font:400 11px/1.5 'Work Sans',sans-serif;color:#D6D2C9">À retenir : l'exocytose est <strong style="font-weight:600">calcium-dépendante</strong>.</div>
+          <div style="display:flex;gap:5px;margin-top:1px">
+            <span style="padding:3px 7px;border-radius:5px;background:rgba(240,236,228,.06);font:500 9.5px/1 'JetBrains Mono',monospace;color:rgba(240,236,228,.5)">#synapse</span>
+            <span style="padding:3px 7px;border-radius:5px;background:rgba(240,236,228,.06);font:500 9.5px/1 'JetBrains Mono',monospace;color:rgba(240,236,228,.5)">#partiel-mai</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="position:absolute;left:922px;top:120px;width:216px;height:172px;background:#232220;border:1px solid rgba(240,236,228,.11);border-radius:10px;box-shadow:0 1px 2px rgba(0,0,0,.05),0 8px 20px -14px rgba(0,0,0,.3);display:flex;flex-direction:column;overflow:hidden">
+        <div style="display:flex;align-items:center;gap:7px;padding:8px 10px;border-bottom:1px solid rgba(240,236,228,.07)">
+          <div style="width:14px;height:14px;border-radius:4px;background:rgba(47,111,224,.14);display:flex;align-items:center;justify-content:center;font:500 8px/1 'JetBrains Mono',monospace;color:#8FB2F2">I</div>
+          <span style="font:600 11.5px/1 'Work Sans',sans-serif;color:#D6D2C9">coupe_moelle.png</span>
+        </div>
+        <div style="flex:1;background:repeating-linear-gradient(135deg,rgba(240,236,228,.07) 0 7px,transparent 7px 14px);display:flex;align-items:center;justify-content:center">
+          <span style="padding:4px 8px;background:#232220;border:1px solid rgba(240,236,228,.1);border-radius:5px;font:400 9px/1 'JetBrains Mono',monospace;color:rgba(240,236,228,.45)">photo · coupe histo</span>
+        </div>
+      </div>
+
+      <div style="position:absolute;left:96px;top:452px;width:252px;height:152px">
+        <div style="position:absolute;inset:0;background:#232220;border-radius:10px;box-shadow:0 0 0 2px oklch(0.72 0.12 150),0 1px 2px rgba(0,0,0,.05),0 10px 24px -14px rgba(0,0,0,.35);display:flex;flex-direction:column;overflow:hidden">
+          <div style="display:flex;align-items:center;gap:7px;padding:8px 10px;border-bottom:1px solid rgba(240,236,228,.07)">
+            <div style="width:14px;height:14px;border-radius:4px;background:rgba(240,236,228,.08);display:flex;align-items:center;justify-content:center;font:500 8px/1 'JetBrains Mono',monospace;color:rgba(240,236,228,.5)">N</div>
+            <span style="font:600 11.5px/1 'Work Sans',sans-serif;color:#D6D2C9">Réflexe myotatique</span>
+          </div>
+          <div style="padding:9px 11px"><p style="margin:0;font:400 11.5px/1.5 'Work Sans',sans-serif;color:#BEB9AF;text-wrap:pretty">Arc monosynaptique : fuseau neuromusculaire → Ia → motoneurone α.</p></div>
+        </div>
+        <div style="position:absolute;left:-4px;top:-4px;width:7px;height:7px;background:#232220;border:1.5px solid oklch(0.72 0.12 150);border-radius:2px"></div>
+        <div style="position:absolute;left:122px;top:-4px;width:7px;height:7px;background:#232220;border:1.5px solid oklch(0.72 0.12 150);border-radius:2px"></div>
+        <div style="position:absolute;right:-4px;top:-4px;width:7px;height:7px;background:#232220;border:1.5px solid oklch(0.72 0.12 150);border-radius:2px"></div>
+        <div style="position:absolute;left:-4px;top:72px;width:7px;height:7px;background:#232220;border:1.5px solid oklch(0.72 0.12 150);border-radius:2px"></div>
+        <div style="position:absolute;right:-4px;top:72px;width:7px;height:7px;background:#232220;border:1.5px solid oklch(0.72 0.12 150);border-radius:2px"></div>
+        <div style="position:absolute;left:-4px;bottom:-4px;width:7px;height:7px;background:#232220;border:1.5px solid oklch(0.72 0.12 150);border-radius:2px"></div>
+        <div style="position:absolute;left:122px;bottom:-4px;width:7px;height:7px;background:#232220;border:1.5px solid oklch(0.72 0.12 150);border-radius:2px"></div>
+        <div style="position:absolute;right:-4px;bottom:-4px;width:7px;height:7px;background:#232220;border:1.5px solid oklch(0.72 0.12 150);border-radius:2px"></div>
+        <div style="position:absolute;left:0;top:-30px;display:flex;align-items:center;gap:3px;padding:4px;background:#38352F;border-radius:7px;box-shadow:0 6px 16px -8px rgba(0,0,0,.6)">
+          <span style="padding:3px 7px;border-radius:4px;font:500 10.5px/1.3 'Work Sans',sans-serif;color:#F4F2ED">Éditer</span>
+          <span style="padding:3px 7px;border-radius:4px;font:500 10.5px/1.3 'Work Sans',sans-serif;color:rgba(244,242,237,.65)">Relier</span>
+          <span style="padding:3px 7px;border-radius:4px;font:500 10.5px/1.3 'Work Sans',sans-serif;color:rgba(244,242,237,.65)">Couleur</span>
+          <span style="width:1px;height:12px;background:rgba(244,242,237,.2)"></span>
+          <span style="padding:3px 7px;border-radius:4px;font:500 10.5px/1.3 'Work Sans',sans-serif;color:rgba(244,242,237,.65)">Suppr.</span>
+        </div>
+      </div>
+
+      <div style="position:absolute;left:50%;bottom:22px;transform:translateX(-50%);display:flex;align-items:center;gap:3px;padding:6px;background:#232220;border:1px solid rgba(240,236,228,.1);border-radius:12px;box-shadow:0 2px 4px rgba(0,0,0,.05),0 14px 34px -18px rgba(0,0,0,.45)">
+        <div style="display:flex;align-items:center;gap:7px;height:32px;padding:0 11px;border-radius:8px;background:rgba(240,236,228,.06);font:600 11.5px/1 'Work Sans',sans-serif;color:#EFEBE3"><span style="width:12px;height:12px;border-radius:3px;background:rgba(240,236,228,.25)"></span>Note</div>
+        <div style="display:flex;align-items:center;gap:7px;height:32px;padding:0 11px;border-radius:8px;font:500 11.5px/1 'Work Sans',sans-serif;color:#BEB9AF" style-hover="background:rgba(240,236,228,.05)"><span style="width:12px;height:12px;border-radius:3px;box-shadow:inset 0 0 0 1.5px rgba(240,236,228,.3)"></span>Tâches</div>
+        <div style="display:flex;align-items:center;gap:7px;height:32px;padding:0 11px;border-radius:8px;font:500 11.5px/1 'Work Sans',sans-serif;color:#BEB9AF" style-hover="background:rgba(240,236,228,.05)"><span style="width:12px;height:12px;border-radius:50%;box-shadow:inset 0 0 0 1.5px rgba(240,236,228,.3)"></span>Fichier</div>
+        <div style="display:flex;align-items:center;gap:7px;height:32px;padding:0 11px;border-radius:8px;font:500 11.5px/1 'Work Sans',sans-serif;color:#BEB9AF" style-hover="background:rgba(240,236,228,.05)"><span style="width:12px;height:12px;border-radius:3px;background:repeating-linear-gradient(135deg,rgba(240,236,228,.3) 0 3px,transparent 3px 6px)"></span>Groupe</div>
+        <span style="width:1px;height:20px;margin:0 4px;background:rgba(240,236,228,.1)"></span>
+        <div style="display:flex;align-items:center;gap:7px;height:32px;padding:0 11px;border-radius:8px;font:500 11.5px/1 'Work Sans',sans-serif;color:#BEB9AF" style-hover="background:rgba(240,236,228,.05)"><span style="width:14px;height:1.5px;background:rgba(240,236,228,.35)"></span>Lien</div>
+      </div>
+
+      <div style="position:absolute;right:22px;bottom:22px;display:flex;flex-direction:column;align-items:flex-end;gap:10px">
+        <sc-if value="{{ showMinimap }}" hint-placeholder-val="{{ true }}">
+          <div style="width:172px;height:106px;background:#232220;border:1px solid rgba(240,236,228,.1);border-radius:9px;box-shadow:0 8px 22px -14px rgba(0,0,0,.4);position:relative;overflow:hidden">
+            <div style="position:absolute;left:10px;top:14px;width:70px;height:44px;border:1px dashed rgba(240,236,228,.25);border-radius:4px"></div>
+            <div style="position:absolute;left:15px;top:20px;width:26px;height:18px;background:rgba(240,236,228,.16);border-radius:2px"></div>
+            <div style="position:absolute;left:47px;top:20px;width:26px;height:30px;background:rgba(240,236,228,.16);border-radius:2px"></div>
+            <div style="position:absolute;left:88px;top:12px;width:34px;height:46px;background:rgba(240,236,228,.16);border-radius:2px"></div>
+            <div style="position:absolute;left:88px;top:64px;width:36px;height:26px;background:rgba(240,236,228,.16);border-radius:2px"></div>
+            <div style="position:absolute;left:132px;top:24px;width:26px;height:22px;background:rgba(240,236,228,.16);border-radius:2px"></div>
+            <div style="position:absolute;left:16px;top:66px;width:30px;height:20px;background:oklch(0.72 0.12 150 / 0.5);border-radius:2px"></div>
+            <div style="position:absolute;left:6px;top:8px;width:130px;height:88px;border:1.5px solid oklch(0.72 0.12 150);border-radius:4px;background:oklch(0.72 0.12 150 / 0.05)"></div>
+          </div>
+        </sc-if>
+        <div style="display:flex;align-items:center;gap:2px;padding:4px;background:#232220;border:1px solid rgba(240,236,228,.1);border-radius:9px;box-shadow:0 8px 22px -14px rgba(0,0,0,.4)">
+          <span style="width:26px;height:26px;display:flex;align-items:center;justify-content:center;border-radius:6px;font:400 13px/1 'Work Sans',sans-serif;color:#BEB9AF">−</span>
+          <span style="padding:0 6px;font:500 10.5px/1 'JetBrains Mono',monospace;color:#D6D2C9">82 %</span>
+          <span style="width:26px;height:26px;display:flex;align-items:center;justify-content:center;border-radius:6px;font:400 13px/1 'Work Sans',sans-serif;color:#BEB9AF">＋</span>
+          <span style="width:1px;height:16px;background:rgba(240,236,228,.1)"></span>
+          <span style="width:26px;height:26px;display:flex;align-items:center;justify-content:center;border-radius:6px;font:400 10px/1 'JetBrains Mono',monospace;color:#BEB9AF">⤢</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+<p class="dv-next">Pistes : « connecte mon dépôt Boardy pour coller aux vrais composants » · « décline la recherche <a class="dv-oid" href="#1b">1b</a> en sombre » · « ajoute l'écran premier lancement »</p>
+</section>
+
+<section class="dv-turn" id="t1">
+<div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">Archipel — direction « papier calme » · Work Sans + Bricolage Grotesque, accent vert local-first</span></div>
+<div class="dv-opts">
+
+<div class="dv-opt" id="1a">
+<div class="dv-olabel"><a class="dv-oid" href="#1a">1a</a>Écran principal — arborescence + canevas infini (1440 × 900)</div>
+<div class="dv-card" style="width:1440px;height:900px;display:flex;background:#F7F5F0">
+
+  <aside style="width:258px;flex:none;background:#EDEAE3;border-right:1px solid rgba(26,26,24,.09);display:flex;flex-direction:column">
+    <div style="padding:16px 16px 12px;display:flex;align-items:center;gap:9px">
+      <div style="width:20px;height:20px;border-radius:5px;background:oklch(0.55 0.13 150);box-shadow:inset 0 0 0 3px rgba(255,255,255,.55)"></div>
+      <div style="font:700 15px/1 'Bricolage Grotesque','Work Sans',sans-serif;letter-spacing:-.01em;color:#1A1A18">Archipel</div>
+      <div style="margin-left:auto;font:400 9px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.4);border:1px solid rgba(26,26,24,.14);border-radius:4px;padding:3px 5px">LOCAL</div>
+    </div>
+    <div style="padding:0 12px 12px">
+      <div style="display:flex;align-items:center;gap:8px;height:32px;padding:0 10px;background:#F7F5F0;border:1px solid rgba(26,26,24,.1);border-radius:7px">
+        <div style="width:11px;height:11px;border:1.5px solid rgba(26,26,24,.35);border-radius:50%"></div>
+        <span style="font:400 12.5px/1 'Work Sans',sans-serif;color:rgba(26,26,24,.4)">Rechercher…</span>
+        <span style="margin-left:auto;font:400 9.5px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.32)">⌘K</span>
+      </div>
+    </div>
+    <div style="flex:1;overflow:hidden;padding:0 8px;display:flex;flex-direction:column;gap:1px">
+      <div style="font:500 9.5px/1 'JetBrains Mono',monospace;letter-spacing:.08em;color:rgba(26,26,24,.35);padding:10px 8px 6px">ESPACE DE TRAVAIL</div>
+
+      <div style="display:flex;align-items:center;gap:7px;height:29px;padding:0 8px;border-radius:6px;color:#3A3833" style-hover="background:rgba(26,26,24,.05)">
+        <span style="font:400 8px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.4);width:8px">▾</span>
+        <div style="width:12px;height:10px;border-radius:2px;background:rgba(26,26,24,.22)"></div>
+        <span style="font:500 12.5px/1 'Work Sans',sans-serif">Licence 2 — Bio</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:7px;height:29px;padding:0 8px 0 23px;border-radius:6px;color:#3A3833" style-hover="background:rgba(26,26,24,.05)">
+        <span style="font:400 8px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.4);width:8px">▾</span>
+        <div style="width:12px;height:10px;border-radius:2px;background:rgba(26,26,24,.22)"></div>
+        <span style="font:500 12.5px/1 'Work Sans',sans-serif">Neurosciences</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:7px;height:29px;padding:0 8px 0 46px;border-radius:6px;background:#F7F5F0;box-shadow:inset 0 0 0 1px rgba(26,26,24,.08);color:#1A1A18">
+        <div style="width:11px;height:11px;border-radius:3px;background:oklch(0.55 0.13 150 / 0.2);box-shadow:inset 0 0 0 1.5px oklch(0.55 0.13 150 / 0.55)"></div>
+        <span style="font:600 12.5px/1 'Work Sans',sans-serif">Système nerveux</span>
+        <span style="margin-left:auto;font:400 9.5px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.35)">14</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:7px;height:29px;padding:0 8px 0 46px;border-radius:6px;color:#3A3833" style-hover="background:rgba(26,26,24,.05)">
+        <div style="width:11px;height:11px;border-radius:3px;box-shadow:inset 0 0 0 1.5px rgba(26,26,24,.28)"></div>
+        <span style="font:500 12.5px/1 'Work Sans',sans-serif">Histologie</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:7px;height:29px;padding:0 8px 0 46px;border-radius:6px;color:#3A3833" style-hover="background:rgba(26,26,24,.05)">
+        <div style="width:11px;height:11px;border-radius:3px;box-shadow:inset 0 0 0 1.5px rgba(26,26,24,.28)"></div>
+        <span style="font:500 12.5px/1 'Work Sans',sans-serif">Fiches de révision</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:7px;height:29px;padding:0 8px 0 23px;border-radius:6px;color:#3A3833" style-hover="background:rgba(26,26,24,.05)">
+        <span style="font:400 8px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.4);width:8px">▸</span>
+        <div style="width:12px;height:10px;border-radius:2px;background:rgba(26,26,24,.22)"></div>
+        <span style="font:500 12.5px/1 'Work Sans',sans-serif">Biochimie</span>
+      </div>
+      <div style="height:2px;margin:6px 8px;background:rgba(26,26,24,.07);border-radius:1px"></div>
+      <div style="display:flex;align-items:center;gap:7px;height:29px;padding:0 8px;border-radius:6px;color:#3A3833" style-hover="background:rgba(26,26,24,.05)">
+        <span style="width:8px"></span>
+        <div style="width:12px;height:10px;border-radius:2px;background:rgba(26,26,24,.22)"></div>
+        <span style="font:500 12.5px/1 'Work Sans',sans-serif">Projets perso</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:7px;height:29px;padding:0 8px;border-radius:6px;color:rgba(26,26,24,.45)" style-hover="background:rgba(26,26,24,.05)">
+        <span style="width:8px"></span>
+        <div style="width:12px;height:10px;border-radius:2px;box-shadow:inset 0 0 0 1.5px rgba(26,26,24,.2)"></div>
+        <span style="font:500 12.5px/1 'Work Sans',sans-serif">Corbeille</span>
+      </div>
+    </div>
+    <div style="padding:10px 16px 14px;border-top:1px solid rgba(26,26,24,.08);display:flex;align-items:center;gap:7px">
+      <div style="width:6px;height:6px;border-radius:50%;background:oklch(0.55 0.13 150)"></div>
+      <span style="font:400 10px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.45)">SQLite · sauvegardé 12:04</span>
+    </div>
+  </aside>
+
+  <div style="flex:1;display:flex;flex-direction:column;min-width:0">
+    <header style="height:52px;flex:none;display:flex;align-items:center;gap:12px;padding:0 18px;background:#F7F5F0;border-bottom:1px solid rgba(26,26,24,.09)">
+      <span style="font:400 11.5px/1 'Work Sans',sans-serif;color:rgba(26,26,24,.42)">Licence 2 — Bio / Neurosciences /</span>
+      <span style="font:700 16px/1 'Bricolage Grotesque','Work Sans',sans-serif;letter-spacing:-.01em;color:#1A1A18">Système nerveux</span>
+      <div style="margin-left:auto;display:flex;align-items:center;gap:6px">
+        <div style="display:flex;align-items:center;gap:6px;height:29px;padding:0 11px;border:1px solid rgba(26,26,24,.12);border-radius:7px;font:500 11.5px/1 'Work Sans',sans-serif;color:#3A3833" style-hover="background:rgba(26,26,24,.04)">Exporter</div>
+        <div style="display:flex;align-items:center;gap:6px;height:29px;padding:0 11px;border-radius:7px;background:#1A1A18;color:#F4F2ED;font:500 11.5px/1 'Work Sans',sans-serif">＋ Carte</div>
+      </div>
+    </header>
+
+    <div style="position:relative;flex:1;overflow:hidden;background:#F7F5F0">
+      <div style="position:absolute;inset:0;background:{{ gridBg }};background-size:22px 22px"></div>
+
+      <svg viewBox="0 0 1180 848" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none">
+        <defs><marker id="arw" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M1,1 L6,4 L1,7" fill="none" stroke="#A8A29A" stroke-width="1.4" stroke-linecap="round"></path></marker></defs>
+        <path d="M288,180 C 420,180 480,132 610,136" fill="none" stroke="#A8A29A" stroke-width="1.6" marker-end="url(#arw)"></path>
+        <path d="M536,236 C 570,236 580,296 610,300" fill="none" stroke="#A8A29A" stroke-width="1.6" marker-end="url(#arw)"></path>
+        <path d="M348,524 C 470,524 500,500 610,500" fill="none" stroke="oklch(0.55 0.13 150)" stroke-width="1.8" marker-end="url(#arw)"></path>
+        <path d="M892,214 C 906,214 912,204 922,204" fill="none" stroke="#A8A29A" stroke-width="1.6" stroke-dasharray="4 4" marker-end="url(#arw)"></path>
+      </svg>
+
+      <sc-if value="{{ showEdgeLabels }}" hint-placeholder-val="{{ true }}">
+        <div style="position:absolute;left:452px;top:487px;padding:3px 7px;background:#F7F5F0;border:1px solid oklch(0.55 0.13 150 / 0.35);border-radius:5px;font:500 9.5px/1 'JetBrains Mono',monospace;color:oklch(0.45 0.12 150)">détaille</div>
+      </sc-if>
+
+      <div style="position:absolute;left:40px;top:56px;width:520px;height:336px;border:1.5px dashed rgba(26,26,24,.18);border-radius:14px;background:rgba(26,26,24,.025)">
+        <div style="position:absolute;top:-11px;left:14px;display:flex;align-items:center;gap:7px;padding:3px 9px;background:#F7F5F0;border:1px solid rgba(26,26,24,.12);border-radius:6px">
+          <div style="width:7px;height:7px;border-radius:2px;background:rgba(26,26,24,.3)"></div>
+          <span style="font:600 10.5px/1 'Work Sans',sans-serif;color:#3A3833">Cours 4 — Moelle épinière</span>
+        </div>
+      </div>
+
+      <div style="position:absolute;left:64px;top:108px;width:224px;height:156px;background:#FFFDF9;border:1px solid rgba(26,26,24,.11);border-radius:10px;box-shadow:0 1px 2px rgba(26,26,24,.05),0 8px 20px -14px rgba(26,26,24,.3);display:flex;flex-direction:column;overflow:hidden">
+        <div style="display:flex;align-items:center;gap:7px;padding:8px 10px;border-bottom:1px solid rgba(26,26,24,.07)">
+          <div style="width:14px;height:14px;border-radius:4px;background:rgba(26,26,24,.08);display:flex;align-items:center;justify-content:center;font:500 8px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.5)">N</div>
+          <span style="font:600 11.5px/1 'Work Sans',sans-serif;color:#3A3833">Voies ascendantes</span>
+        </div>
+        <div style="padding:9px 11px;display:flex;flex-direction:column;gap:6px">
+          <p style="margin:0;font:400 11.5px/1.5 'Work Sans',sans-serif;color:#4A4842;text-wrap:pretty">Faisceau <strong style="font-weight:600">spinothalamique</strong> : douleur et température, décussation immédiate.</p>
+          <p style="margin:0;font:400 11.5px/1.5 'Work Sans',sans-serif;color:#4A4842;text-wrap:pretty">Cordons postérieurs : tact fin, proprioception.</p>
+        </div>
+      </div>
+
+      <div style="position:absolute;left:312px;top:108px;width:224px;height:246px;background:#FFFDF9;border:1px solid rgba(26,26,24,.11);border-radius:10px;box-shadow:0 1px 2px rgba(26,26,24,.05),0 8px 20px -14px rgba(26,26,24,.3);display:flex;flex-direction:column;overflow:hidden">
+        <div style="display:flex;align-items:center;gap:7px;padding:8px 10px;border-bottom:1px solid rgba(26,26,24,.07)">
+          <div style="width:14px;height:14px;border-radius:4px;background:oklch(0.55 0.13 150 / 0.14);display:flex;align-items:center;justify-content:center;font:500 8px/1 'JetBrains Mono',monospace;color:oklch(0.45 0.12 150)">T</div>
+          <span style="font:600 11.5px/1 'Work Sans',sans-serif;color:#3A3833">Avant le partiel</span>
+          <span style="margin-left:auto;font:400 9.5px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.4)">2/5</span>
+        </div>
+        <div style="padding:8px 10px;display:flex;flex-direction:column;gap:2px">
+          <div style="display:flex;align-items:flex-start;gap:8px;padding:5px 4px"><div style="width:13px;height:13px;flex:none;border-radius:4px;background:oklch(0.55 0.13 150);display:flex;align-items:center;justify-content:center;color:#fff;font:600 9px/1 'Work Sans',sans-serif">✓</div><span style="font:400 11.5px/1.35 'Work Sans',sans-serif;color:rgba(26,26,24,.4);text-decoration:line-through">Relire le CM 3</span></div>
+          <div style="display:flex;align-items:flex-start;gap:8px;padding:5px 4px"><div style="width:13px;height:13px;flex:none;border-radius:4px;background:oklch(0.55 0.13 150);display:flex;align-items:center;justify-content:center;color:#fff;font:600 9px/1 'Work Sans',sans-serif">✓</div><span style="font:400 11.5px/1.35 'Work Sans',sans-serif;color:rgba(26,26,24,.4);text-decoration:line-through">Schéma des cordons</span></div>
+          <div style="display:flex;align-items:flex-start;gap:8px;padding:5px 4px"><div style="width:13px;height:13px;flex:none;border-radius:4px;box-shadow:inset 0 0 0 1.5px rgba(26,26,24,.24)"></div><span style="font:400 11.5px/1.35 'Work Sans',sans-serif;color:#3A3833">Annales 2023 — QCM 1 à 20</span></div>
+          <div style="display:flex;align-items:flex-start;gap:8px;padding:5px 4px"><div style="width:13px;height:13px;flex:none;border-radius:4px;box-shadow:inset 0 0 0 1.5px rgba(26,26,24,.24)"></div><span style="font:400 11.5px/1.35 'Work Sans',sans-serif;color:#3A3833">Fiche synapse (recto/verso)</span></div>
+          <div style="display:flex;align-items:flex-start;gap:8px;padding:5px 4px"><div style="width:13px;height:13px;flex:none;border-radius:4px;box-shadow:inset 0 0 0 1.5px rgba(26,26,24,.24)"></div><span style="font:400 11.5px/1.35 'Work Sans',sans-serif;color:#3A3833">TD réflexe myotatique</span></div>
+          <div style="display:flex;align-items:center;gap:8px;padding:6px 4px;font:400 11.5px/1 'Work Sans',sans-serif;color:rgba(26,26,24,.35)"><span style="width:13px;text-align:center">＋</span>Ajouter une tâche</div>
+        </div>
+      </div>
+
+      <div style="position:absolute;left:616px;top:44px;width:276px;height:348px;background:#FFFDF9;border:1px solid rgba(26,26,24,.11);border-radius:10px;box-shadow:0 1px 2px rgba(26,26,24,.05),0 8px 20px -14px rgba(26,26,24,.3);display:flex;flex-direction:column;overflow:hidden">
+        <div style="display:flex;align-items:center;gap:7px;padding:8px 10px;border-bottom:1px solid rgba(26,26,24,.07)">
+          <div style="width:14px;height:14px;border-radius:4px;background:rgba(180,85,42,.14);display:flex;align-items:center;justify-content:center;font:500 8px/1 'JetBrains Mono',monospace;color:#8A4522">P</div>
+          <span style="font:600 11.5px/1 'Work Sans',sans-serif;color:#3A3833">poly_neuro_ch3.pdf</span>
+          <span style="margin-left:auto;font:400 9.5px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.4)">p. 12/48</span>
+        </div>
+        <div style="flex:1;padding:10px;background:rgba(26,26,24,.045);display:flex;align-items:stretch">
+          <div style="flex:1;background:#fff;border:1px solid rgba(26,26,24,.09);border-radius:3px;padding:14px 16px;display:flex;flex-direction:column;gap:7px">
+            <div style="height:9px;width:62%;background:rgba(26,26,24,.2);border-radius:2px"></div>
+            <div style="height:5px;width:100%;background:rgba(26,26,24,.1);border-radius:2px"></div>
+            <div style="height:5px;width:96%;background:rgba(26,26,24,.1);border-radius:2px"></div>
+            <div style="height:5px;width:88%;background:rgba(26,26,24,.1);border-radius:2px"></div>
+            <div style="height:74px;margin:5px 0;background:repeating-linear-gradient(135deg,rgba(26,26,24,.09) 0 6px,transparent 6px 12px);border:1px solid rgba(26,26,24,.1);border-radius:3px;display:flex;align-items:center;justify-content:center;font:400 8.5px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.4)">figure 3.4</div>
+            <div style="height:5px;width:100%;background:rgba(26,26,24,.1);border-radius:2px"></div>
+            <div style="height:5px;width:91%;background:rgba(26,26,24,.1);border-radius:2px"></div>
+            <div style="height:5px;width:78%;background:rgba(26,26,24,.1);border-radius:2px"></div>
+            <div style="height:5px;width:94%;background:rgba(26,26,24,.1);border-radius:2px"></div>
+            <div style="height:5px;width:40%;background:rgba(26,26,24,.1);border-radius:2px"></div>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:center;gap:10px;padding:7px;border-top:1px solid rgba(26,26,24,.07);font:400 10px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.45)"><span>‹</span><span>12</span><span>›</span><span style="color:rgba(26,26,24,.2)">|</span><span>surligner</span></div>
+      </div>
+
+      <div style="position:absolute;left:616px;top:424px;width:296px;height:210px;background:#FFFDF9;border:1px solid rgba(26,26,24,.11);border-radius:10px;box-shadow:0 1px 2px rgba(26,26,24,.05),0 8px 20px -14px rgba(26,26,24,.3);display:flex;flex-direction:column;overflow:hidden">
+        <div style="display:flex;align-items:center;gap:7px;padding:8px 10px;border-bottom:1px solid rgba(26,26,24,.07)">
+          <div style="width:14px;height:14px;border-radius:4px;background:rgba(26,26,24,.08);display:flex;align-items:center;justify-content:center;font:500 8px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.5)">N</div>
+          <span style="font:600 11.5px/1 'Work Sans',sans-serif;color:#3A3833">Résumé — la synapse chimique</span>
+        </div>
+        <div style="padding:10px 12px;display:flex;flex-direction:column;gap:7px">
+          <p style="margin:0;font:400 11.5px/1.55 'Work Sans',sans-serif;color:#4A4842;text-wrap:pretty">Le potentiel d'action ouvre les canaux Ca²⁺ voltage-dépendants du bouton présynaptique.</p>
+          <div style="padding:7px 10px;border-left:2px solid oklch(0.55 0.13 150);background:oklch(0.55 0.13 150 / 0.07);font:400 11px/1.5 'Work Sans',sans-serif;color:#3A3833">À retenir : l'exocytose est <strong style="font-weight:600">calcium-dépendante</strong>.</div>
+          <div style="display:flex;gap:5px;margin-top:1px">
+            <span style="padding:3px 7px;border-radius:5px;background:rgba(26,26,24,.06);font:500 9.5px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.5)">#synapse</span>
+            <span style="padding:3px 7px;border-radius:5px;background:rgba(26,26,24,.06);font:500 9.5px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.5)">#partiel-mai</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="position:absolute;left:922px;top:120px;width:216px;height:172px;background:#FFFDF9;border:1px solid rgba(26,26,24,.11);border-radius:10px;box-shadow:0 1px 2px rgba(26,26,24,.05),0 8px 20px -14px rgba(26,26,24,.3);display:flex;flex-direction:column;overflow:hidden">
+        <div style="display:flex;align-items:center;gap:7px;padding:8px 10px;border-bottom:1px solid rgba(26,26,24,.07)">
+          <div style="width:14px;height:14px;border-radius:4px;background:rgba(47,111,224,.14);display:flex;align-items:center;justify-content:center;font:500 8px/1 'JetBrains Mono',monospace;color:#2A5FBF">I</div>
+          <span style="font:600 11.5px/1 'Work Sans',sans-serif;color:#3A3833">coupe_moelle.png</span>
+        </div>
+        <div style="flex:1;background:repeating-linear-gradient(135deg,rgba(26,26,24,.07) 0 7px,transparent 7px 14px);display:flex;align-items:center;justify-content:center">
+          <span style="padding:4px 8px;background:#FFFDF9;border:1px solid rgba(26,26,24,.1);border-radius:5px;font:400 9px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.45)">photo · coupe histo</span>
+        </div>
+      </div>
+
+      <div style="position:absolute;left:96px;top:452px;width:252px;height:152px">
+        <div style="position:absolute;inset:0;background:#FFFDF9;border-radius:10px;box-shadow:0 0 0 2px oklch(0.55 0.13 150),0 1px 2px rgba(26,26,24,.05),0 10px 24px -14px rgba(26,26,24,.35);display:flex;flex-direction:column;overflow:hidden">
+          <div style="display:flex;align-items:center;gap:7px;padding:8px 10px;border-bottom:1px solid rgba(26,26,24,.07)">
+            <div style="width:14px;height:14px;border-radius:4px;background:rgba(26,26,24,.08);display:flex;align-items:center;justify-content:center;font:500 8px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.5)">N</div>
+            <span style="font:600 11.5px/1 'Work Sans',sans-serif;color:#3A3833">Réflexe myotatique</span>
+          </div>
+          <div style="padding:9px 11px"><p style="margin:0;font:400 11.5px/1.5 'Work Sans',sans-serif;color:#4A4842;text-wrap:pretty">Arc monosynaptique : fuseau neuromusculaire → Ia → motoneurone α.</p></div>
+        </div>
+        <div style="position:absolute;left:-4px;top:-4px;width:7px;height:7px;background:#FFFDF9;border:1.5px solid oklch(0.55 0.13 150);border-radius:2px"></div>
+        <div style="position:absolute;left:122px;top:-4px;width:7px;height:7px;background:#FFFDF9;border:1.5px solid oklch(0.55 0.13 150);border-radius:2px"></div>
+        <div style="position:absolute;right:-4px;top:-4px;width:7px;height:7px;background:#FFFDF9;border:1.5px solid oklch(0.55 0.13 150);border-radius:2px"></div>
+        <div style="position:absolute;left:-4px;top:72px;width:7px;height:7px;background:#FFFDF9;border:1.5px solid oklch(0.55 0.13 150);border-radius:2px"></div>
+        <div style="position:absolute;right:-4px;top:72px;width:7px;height:7px;background:#FFFDF9;border:1.5px solid oklch(0.55 0.13 150);border-radius:2px"></div>
+        <div style="position:absolute;left:-4px;bottom:-4px;width:7px;height:7px;background:#FFFDF9;border:1.5px solid oklch(0.55 0.13 150);border-radius:2px"></div>
+        <div style="position:absolute;left:122px;bottom:-4px;width:7px;height:7px;background:#FFFDF9;border:1.5px solid oklch(0.55 0.13 150);border-radius:2px"></div>
+        <div style="position:absolute;right:-4px;bottom:-4px;width:7px;height:7px;background:#FFFDF9;border:1.5px solid oklch(0.55 0.13 150);border-radius:2px"></div>
+        <div style="position:absolute;left:0;top:-30px;display:flex;align-items:center;gap:3px;padding:4px;background:#1A1A18;border-radius:7px;box-shadow:0 6px 16px -8px rgba(26,26,24,.6)">
+          <span style="padding:3px 7px;border-radius:4px;font:500 10.5px/1.3 'Work Sans',sans-serif;color:#F4F2ED">Éditer</span>
+          <span style="padding:3px 7px;border-radius:4px;font:500 10.5px/1.3 'Work Sans',sans-serif;color:rgba(244,242,237,.65)">Relier</span>
+          <span style="padding:3px 7px;border-radius:4px;font:500 10.5px/1.3 'Work Sans',sans-serif;color:rgba(244,242,237,.65)">Couleur</span>
+          <span style="width:1px;height:12px;background:rgba(244,242,237,.2)"></span>
+          <span style="padding:3px 7px;border-radius:4px;font:500 10.5px/1.3 'Work Sans',sans-serif;color:rgba(244,242,237,.65)">Suppr.</span>
+        </div>
+      </div>
+
+      <div style="position:absolute;left:50%;bottom:22px;transform:translateX(-50%);display:flex;align-items:center;gap:3px;padding:6px;background:#FFFDF9;border:1px solid rgba(26,26,24,.1);border-radius:12px;box-shadow:0 2px 4px rgba(26,26,24,.05),0 14px 34px -18px rgba(26,26,24,.45)">
+        <div style="display:flex;align-items:center;gap:7px;height:32px;padding:0 11px;border-radius:8px;background:rgba(26,26,24,.06);font:600 11.5px/1 'Work Sans',sans-serif;color:#1A1A18"><span style="width:12px;height:12px;border-radius:3px;background:rgba(26,26,24,.25)"></span>Note</div>
+        <div style="display:flex;align-items:center;gap:7px;height:32px;padding:0 11px;border-radius:8px;font:500 11.5px/1 'Work Sans',sans-serif;color:#4A4842" style-hover="background:rgba(26,26,24,.05)"><span style="width:12px;height:12px;border-radius:3px;box-shadow:inset 0 0 0 1.5px rgba(26,26,24,.3)"></span>Tâches</div>
+        <div style="display:flex;align-items:center;gap:7px;height:32px;padding:0 11px;border-radius:8px;font:500 11.5px/1 'Work Sans',sans-serif;color:#4A4842" style-hover="background:rgba(26,26,24,.05)"><span style="width:12px;height:12px;border-radius:50%;box-shadow:inset 0 0 0 1.5px rgba(26,26,24,.3)"></span>Fichier</div>
+        <div style="display:flex;align-items:center;gap:7px;height:32px;padding:0 11px;border-radius:8px;font:500 11.5px/1 'Work Sans',sans-serif;color:#4A4842" style-hover="background:rgba(26,26,24,.05)"><span style="width:12px;height:12px;border-radius:3px;background:repeating-linear-gradient(135deg,rgba(26,26,24,.3) 0 3px,transparent 3px 6px)"></span>Groupe</div>
+        <span style="width:1px;height:20px;margin:0 4px;background:rgba(26,26,24,.1)"></span>
+        <div style="display:flex;align-items:center;gap:7px;height:32px;padding:0 11px;border-radius:8px;font:500 11.5px/1 'Work Sans',sans-serif;color:#4A4842" style-hover="background:rgba(26,26,24,.05)"><span style="width:14px;height:1.5px;background:rgba(26,26,24,.35)"></span>Lien</div>
+      </div>
+
+      <div style="position:absolute;right:22px;bottom:22px;display:flex;flex-direction:column;align-items:flex-end;gap:10px">
+        <sc-if value="{{ showMinimap }}" hint-placeholder-val="{{ true }}">
+          <div style="width:172px;height:106px;background:#FFFDF9;border:1px solid rgba(26,26,24,.1);border-radius:9px;box-shadow:0 8px 22px -14px rgba(26,26,24,.4);position:relative;overflow:hidden">
+            <div style="position:absolute;left:10px;top:14px;width:70px;height:44px;border:1px dashed rgba(26,26,24,.25);border-radius:4px"></div>
+            <div style="position:absolute;left:15px;top:20px;width:26px;height:18px;background:rgba(26,26,24,.16);border-radius:2px"></div>
+            <div style="position:absolute;left:47px;top:20px;width:26px;height:30px;background:rgba(26,26,24,.16);border-radius:2px"></div>
+            <div style="position:absolute;left:88px;top:12px;width:34px;height:46px;background:rgba(26,26,24,.16);border-radius:2px"></div>
+            <div style="position:absolute;left:88px;top:64px;width:36px;height:26px;background:rgba(26,26,24,.16);border-radius:2px"></div>
+            <div style="position:absolute;left:132px;top:24px;width:26px;height:22px;background:rgba(26,26,24,.16);border-radius:2px"></div>
+            <div style="position:absolute;left:16px;top:66px;width:30px;height:20px;background:oklch(0.55 0.13 150 / 0.5);border-radius:2px"></div>
+            <div style="position:absolute;left:6px;top:8px;width:130px;height:88px;border:1.5px solid oklch(0.55 0.13 150);border-radius:4px;background:oklch(0.55 0.13 150 / 0.05)"></div>
+          </div>
+        </sc-if>
+        <div style="display:flex;align-items:center;gap:2px;padding:4px;background:#FFFDF9;border:1px solid rgba(26,26,24,.1);border-radius:9px;box-shadow:0 8px 22px -14px rgba(26,26,24,.4)">
+          <span style="width:26px;height:26px;display:flex;align-items:center;justify-content:center;border-radius:6px;font:400 13px/1 'Work Sans',sans-serif;color:#4A4842">−</span>
+          <span style="padding:0 6px;font:500 10.5px/1 'JetBrains Mono',monospace;color:#3A3833">82 %</span>
+          <span style="width:26px;height:26px;display:flex;align-items:center;justify-content:center;border-radius:6px;font:400 13px/1 'Work Sans',sans-serif;color:#4A4842">＋</span>
+          <span style="width:1px;height:16px;background:rgba(26,26,24,.1)"></span>
+          <span style="width:26px;height:26px;display:flex;align-items:center;justify-content:center;border-radius:6px;font:400 10px/1 'JetBrains Mono',monospace;color:#4A4842">⤢</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="dv-opt" id="1b">
+<div class="dv-olabel"><a class="dv-oid" href="#1b">1b</a>Recherche globale (FTS5) — ⌘K</div>
+<div class="dv-card" style="width:520px;padding:26px;background:#E7E4DC">
+  <div style="background:#FFFDF9;border:1px solid rgba(26,26,24,.1);border-radius:12px;box-shadow:0 20px 44px -20px rgba(26,26,24,.45);overflow:hidden">
+    <div style="display:flex;align-items:center;gap:10px;padding:14px 16px;border-bottom:1px solid rgba(26,26,24,.08)">
+      <div style="width:13px;height:13px;border:1.5px solid rgba(26,26,24,.35);border-radius:50%"></div>
+      <span style="font:400 15px/1 'Work Sans',sans-serif;color:#1A1A18">synapse<span style="color:oklch(0.55 0.13 150)">|</span></span>
+      <span style="margin-left:auto;font:400 9.5px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.35)">FTS5 · 7 résultats · 4 ms</span>
+    </div>
+    <div style="padding:8px">
+      <div style="font:500 9.5px/1 'JetBrains Mono',monospace;letter-spacing:.08em;color:rgba(26,26,24,.35);padding:8px 10px 6px">CARTES</div>
+      <div style="display:flex;flex-direction:column;gap:1px">
+        <div style="display:flex;align-items:flex-start;gap:10px;padding:9px 10px;border-radius:8px;background:oklch(0.55 0.13 150 / 0.09)">
+          <div style="width:14px;height:14px;margin-top:1px;border-radius:4px;background:rgba(26,26,24,.08);display:flex;align-items:center;justify-content:center;font:500 8px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.5)">N</div>
+          <div style="min-width:0">
+            <div style="font:600 12.5px/1.3 'Work Sans',sans-serif;color:#1A1A18">Résumé — la <mark style="background:oklch(0.55 0.13 150 / 0.28);color:inherit;padding:0 1px">synapse</mark> chimique</div>
+            <div style="font:400 11px/1.4 'Work Sans',sans-serif;color:rgba(26,26,24,.5);margin-top:2px">Système nerveux · l'exocytose est calcium-dépendante</div>
+          </div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:10px;padding:9px 10px;border-radius:8px">
+          <div style="width:14px;height:14px;margin-top:1px;border-radius:4px;background:oklch(0.55 0.13 150 / 0.14);display:flex;align-items:center;justify-content:center;font:500 8px/1 'JetBrains Mono',monospace;color:oklch(0.45 0.12 150)">T</div>
+          <div style="min-width:0">
+            <div style="font:600 12.5px/1.3 'Work Sans',sans-serif;color:#1A1A18">Fiche <mark style="background:oklch(0.55 0.13 150 / 0.28);color:inherit;padding:0 1px">synapse</mark> (recto/verso)</div>
+            <div style="font:400 11px/1.4 'Work Sans',sans-serif;color:rgba(26,26,24,.5);margin-top:2px">Avant le partiel · tâche non terminée</div>
+          </div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:10px;padding:9px 10px;border-radius:8px">
+          <div style="width:14px;height:14px;margin-top:1px;border-radius:4px;background:rgba(180,85,42,.14);display:flex;align-items:center;justify-content:center;font:500 8px/1 'JetBrains Mono',monospace;color:#8A4522">P</div>
+          <div style="min-width:0">
+            <div style="font:600 12.5px/1.3 'Work Sans',sans-serif;color:#1A1A18">poly_neuro_ch3.pdf — p. 14</div>
+            <div style="font:400 11px/1.4 'Work Sans',sans-serif;color:rgba(26,26,24,.5);margin-top:2px">« … la fente <mark style="background:oklch(0.55 0.13 150 / 0.28);color:inherit;padding:0 1px">synapt</mark>ique mesure 20 nm … »</div>
+          </div>
+        </div>
+      </div>
+      <div style="font:500 9.5px/1 'JetBrains Mono',monospace;letter-spacing:.08em;color:rgba(26,26,24,.35);padding:12px 10px 6px">TABLEAUX</div>
+      <div style="display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:8px">
+        <div style="width:14px;height:14px;border-radius:4px;box-shadow:inset 0 0 0 1.5px rgba(26,26,24,.28)"></div>
+        <div style="font:600 12.5px/1.3 'Work Sans',sans-serif;color:#1A1A18">Fiches de révision</div>
+        <div style="margin-left:auto;font:400 10px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.4)">Neurosciences</div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;gap:14px;padding:9px 14px;border-top:1px solid rgba(26,26,24,.08);background:rgba(26,26,24,.025);font:400 9.5px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.42)">
+      <span>↵ ouvrir</span><span>⇧↵ ouvrir dans le canevas</span><span style="margin-left:auto">esc</span>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="dv-opt" id="1c">
+<div class="dv-olabel"><a class="dv-oid" href="#1c">1c</a>Types de cartes — spécimens et états</div>
+<div class="dv-card" style="width:872px;padding:26px;background:#F7F5F0;display:flex;flex-wrap:wrap;gap:22px">
+
+  <div style="display:flex;flex-direction:column;gap:7px">
+    <span style="font:400 9.5px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.45)">NoteNode · repos</span>
+    <div style="width:246px;background:#FFFDF9;border:1px solid rgba(26,26,24,.11);border-radius:10px;box-shadow:0 1px 2px rgba(26,26,24,.05);overflow:hidden">
+      <div style="display:flex;align-items:center;gap:7px;padding:8px 10px;border-bottom:1px solid rgba(26,26,24,.07)"><div style="width:14px;height:14px;border-radius:4px;background:rgba(26,26,24,.08);display:flex;align-items:center;justify-content:center;font:500 8px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.5)">N</div><span style="font:600 11.5px/1 'Work Sans',sans-serif;color:#3A3833">Titre de la note</span></div>
+      <div style="padding:9px 11px"><p style="margin:0;font:400 11.5px/1.5 'Work Sans',sans-serif;color:#4A4842">Texte enrichi TipTap : <strong style="font-weight:600">gras</strong>, <em>italique</em>, <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;background:rgba(26,26,24,.07);padding:1px 4px;border-radius:3px">code</span>.</p></div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:7px">
+    <span style="font:400 9.5px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.45)">NoteNode · édition</span>
+    <div style="width:246px;background:#FFFDF9;border-radius:10px;box-shadow:0 0 0 2px oklch(0.55 0.13 150),0 1px 2px rgba(26,26,24,.05);overflow:hidden">
+      <div style="display:flex;align-items:center;gap:3px;padding:6px 8px;border-bottom:1px solid rgba(26,26,24,.07);background:rgba(26,26,24,.03)">
+        <span style="width:20px;height:20px;display:flex;align-items:center;justify-content:center;border-radius:5px;background:rgba(26,26,24,.09);font:700 10.5px/1 'Work Sans',sans-serif;color:#1A1A18">B</span>
+        <span style="width:20px;height:20px;display:flex;align-items:center;justify-content:center;border-radius:5px;font:400 10.5px/1 'Work Sans',sans-serif;font-style:italic;color:#4A4842">I</span>
+        <span style="width:20px;height:20px;display:flex;align-items:center;justify-content:center;border-radius:5px;font:500 9px/1 'JetBrains Mono',monospace;color:#4A4842">H2</span>
+        <span style="width:20px;height:20px;display:flex;align-items:center;justify-content:center;border-radius:5px;font:400 11px/1 'Work Sans',sans-serif;color:#4A4842">•</span>
+        <span style="width:1px;height:14px;margin:0 3px;background:rgba(26,26,24,.12)"></span>
+        <span style="width:20px;height:20px;display:flex;align-items:center;justify-content:center;border-radius:5px;font:400 10px/1 'JetBrains Mono',monospace;color:#4A4842">🔗</span>
+      </div>
+      <div style="padding:9px 11px"><p style="margin:0;font:400 11.5px/1.5 'Work Sans',sans-serif;color:#4A4842">Le curseur est actif ici<span style="color:oklch(0.55 0.13 150)">|</span></p></div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:7px">
+    <span style="font:400 9.5px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.45)">TodoListNode</span>
+    <div style="width:222px;background:#FFFDF9;border:1px solid rgba(26,26,24,.11);border-radius:10px;box-shadow:0 1px 2px rgba(26,26,24,.05);overflow:hidden">
+      <div style="display:flex;align-items:center;gap:7px;padding:8px 10px;border-bottom:1px solid rgba(26,26,24,.07)"><div style="width:14px;height:14px;border-radius:4px;background:oklch(0.55 0.13 150 / 0.14);display:flex;align-items:center;justify-content:center;font:500 8px/1 'JetBrains Mono',monospace;color:oklch(0.45 0.12 150)">T</div><span style="font:600 11.5px/1 'Work Sans',sans-serif;color:#3A3833">Liste</span><span style="margin-left:auto;font:400 9.5px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.4)">1/3</span></div>
+      <div style="height:3px;background:rgba(26,26,24,.07)"><div style="width:33%;height:3px;background:oklch(0.55 0.13 150)"></div></div>
+      <div style="padding:8px 10px;display:flex;flex-direction:column;gap:2px">
+        <div style="display:flex;gap:8px;padding:5px 4px"><div style="width:13px;height:13px;flex:none;border-radius:4px;background:oklch(0.55 0.13 150);display:flex;align-items:center;justify-content:center;color:#fff;font:600 9px/1 'Work Sans',sans-serif">✓</div><span style="font:400 11.5px/1.35 'Work Sans',sans-serif;color:rgba(26,26,24,.4);text-decoration:line-through">Terminé</span></div>
+        <div style="display:flex;gap:8px;padding:5px 4px"><div style="width:13px;height:13px;flex:none;border-radius:4px;box-shadow:inset 0 0 0 1.5px rgba(26,26,24,.24)"></div><span style="font:400 11.5px/1.35 'Work Sans',sans-serif;color:#3A3833">À faire</span></div>
+        <div style="display:flex;gap:8px;padding:5px 4px;background:rgba(26,26,24,.04);border-radius:5px"><div style="width:13px;height:13px;flex:none;border-radius:4px;box-shadow:inset 0 0 0 1.5px rgba(26,26,24,.24)"></div><span style="font:400 11.5px/1.35 'Work Sans',sans-serif;color:#3A3833">Survol / glisser</span><span style="margin-left:auto;font:400 10px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.3)">⋮⋮</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:7px">
+    <span style="font:400 9.5px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.45)">ImageNode · glisser-déposer</span>
+    <div style="width:222px;height:150px;border:1.5px dashed oklch(0.55 0.13 150 / 0.55);border-radius:10px;background:oklch(0.55 0.13 150 / 0.06);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px">
+      <div style="width:26px;height:26px;border-radius:7px;background:oklch(0.55 0.13 150 / 0.18)"></div>
+      <span style="font:500 11.5px/1 'Work Sans',sans-serif;color:oklch(0.42 0.12 150)">Déposer une image</span>
+      <span style="font:400 9.5px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.4)">copiée dans ~/Archipel/assets</span>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:7px">
+    <span style="font:400 9.5px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.45)">GroupNode · replié</span>
+    <div style="width:246px;height:64px;border:1.5px dashed rgba(26,26,24,.18);border-radius:12px;background:rgba(26,26,24,.03);position:relative;display:flex;align-items:center;padding:0 14px">
+      <div style="display:flex;align-items:center;gap:8px"><span style="font:400 9px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.4)">▸</span><span style="font:600 11.5px/1 'Work Sans',sans-serif;color:#3A3833">Cours 5 — Cervelet</span><span style="padding:2px 6px;border-radius:4px;background:rgba(26,26,24,.07);font:500 9.5px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.45)">6 cartes</span></div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:7px">
+    <span style="font:400 9.5px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.45)">Edge · style et étiquette</span>
+    <div style="width:246px;height:64px;border:1px solid rgba(26,26,24,.09);border-radius:10px;background:#FFFDF9;position:relative;overflow:hidden">
+      <svg viewBox="0 0 246 64" style="position:absolute;inset:0;width:100%;height:100%">
+        <defs><marker id="arw2" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M1,1 L6,4 L1,7" fill="none" stroke="oklch(0.55 0.13 150)" stroke-width="1.4" stroke-linecap="round"></path></marker></defs>
+        <path d="M18,20 C 70,20 100,20 152,20" fill="none" stroke="oklch(0.55 0.13 150)" stroke-width="1.8" marker-end="url(#arw2)"></path>
+        <path d="M18,44 C 70,44 100,44 152,44" fill="none" stroke="#A8A29A" stroke-width="1.6" stroke-dasharray="4 4"></path>
+        <circle cx="14" cy="20" r="3.5" fill="#FFFDF9" stroke="oklch(0.55 0.13 150)" stroke-width="1.5"></circle>
+        <circle cx="14" cy="44" r="3.5" fill="#FFFDF9" stroke="#A8A29A" stroke-width="1.5"></circle>
+      </svg>
+      <span style="position:absolute;left:170px;top:12px;font:500 9.5px/1 'JetBrains Mono',monospace;color:oklch(0.42 0.12 150)">cause</span>
+      <span style="position:absolute;left:170px;top:37px;font:500 9.5px/1 'JetBrains Mono',monospace;color:rgba(26,26,24,.4)">voir aussi</span>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+<p class="dv-next">Pistes : « connecte mon dépôt Boardy pour coller aux vrais composants » · « décline <a class="dv-oid" href="#1a">1a</a> en thème sombre » · « propose 2 autres barres d'outils pour <a class="dv-oid" href="#1a">1a</a> »</p>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;gridStyle&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;points&quot;,&quot;lignes&quot;,&quot;aucune&quot;],&quot;default&quot;:&quot;points&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Canevas&quot;},&quot;showMinimap&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Canevas&quot;},&quot;showEdgeLabels&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Canevas&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const grid = this.props.gridStyle ?? "points";
+    const bg = {
+      points: "radial-gradient(rgba(26,26,24,.13) 1px, transparent 1px)",
+      lignes: "linear-gradient(rgba(26,26,24,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(26,26,24,.07) 1px, transparent 1px)",
+      aucune: "none"
+    }[grid];
+    const bgDark = {
+      points: "radial-gradient(rgba(240,236,228,.13) 1px, transparent 1px)",
+      lignes: "linear-gradient(rgba(240,236,228,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(240,236,228,.08) 1px, transparent 1px)",
+      aucune: "none"
+    }[grid];
+    return {
+      gridBg: bg,
+      gridBgDark: bgDark,
+      showMinimap: this.props.showMinimap ?? true,
+      showEdgeLabels: this.props.showEdgeLabels ?? true
+    };
+  }
+}
+</script>
+</body>
+</html>

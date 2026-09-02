@@ -1,0 +1,370 @@
+@import '@fontsource/plus-jakarta-sans/latin-400.css';
+@import '@fontsource/plus-jakarta-sans/latin-500.css';
+@import '@fontsource/plus-jakarta-sans/latin-600.css';
+@import '@fontsource/plus-jakarta-sans/latin-700.css';
+@import '@fontsource/roboto/latin-400.css';
+@import '@fontsource/roboto/latin-500.css';
+@import '@fontsource/roboto/latin-700.css';
+@import 'tailwindcss';
+@import '@xyflow/react/dist/style.css';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  color-scheme: light dark;
+  font-family: 'Plus Jakarta Sans', 'Roboto', system-ui, sans-serif;
+
+  /* Soft Google Material Cream Palette */
+  --boardy-bg: #F8F9FA;
+  --boardy-sidebar-bg: #F1F3F4;
+  --boardy-card-bg: #FFFFFF;
+  --boardy-border: rgba(0, 0, 0, 0.06);
+  --boardy-border-subtle: rgba(0, 0, 0, 0.03);
+  --boardy-accent: #0B57D0;
+  --boardy-accent-container: #D3E3FD;
+  --boardy-on-accent-container: #041E49;
+  --boardy-accent-light: rgba(11, 87, 208, 0.12);
+  --boardy-text-primary: #1F1F1F;
+  --boardy-text-secondary: #444746;
+  --boardy-text-muted: #747775;
+  --boardy-shadow: 0 2px 12px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+
+  --archipel-bg: var(--boardy-bg);
+  --md-surface-container: var(--boardy-bg);
+  --md-surface-container-high: var(--boardy-sidebar-bg);
+  --md-surface-container-highest: #E2DFD7;
+  --md-primary: var(--boardy-accent);
+  --md-primary-container: var(--boardy-accent-container);
+  --md-on-primary-container: var(--boardy-on-accent-container);
+}
+
+:root.dark {
+  /* Google Material You Dark Palette */
+  --boardy-bg: #111318;
+  --boardy-sidebar-bg: #1B1D22;
+  --boardy-card-bg: #272A30;
+  --boardy-border: rgba(255, 255, 255, 0.08);
+  --boardy-border-subtle: rgba(255, 255, 255, 0.04);
+  --boardy-accent: #A8C7FA;
+  --boardy-accent-container: #004A77;
+  --boardy-on-accent-container: #C2E7FF;
+  --boardy-accent-light: rgba(168, 199, 250, 0.15);
+  --boardy-text-primary: #E3E2E6;
+  --boardy-text-secondary: #C4C7C5;
+  --boardy-text-muted: #8E918F;
+  --boardy-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+
+  --archipel-bg: var(--boardy-bg);
+  --md-surface-container: var(--boardy-bg);
+  --md-surface-container-high: var(--boardy-sidebar-bg);
+  --md-surface-container-highest: #32353C;
+  --md-primary: var(--boardy-accent);
+  --md-primary-container: var(--boardy-accent-container);
+  --md-on-primary-container: var(--boardy-on-accent-container);
+}
+
+.font-sans-google {
+  font-family: 'Plus Jakarta Sans', 'Roboto', sans-serif;
+}
+
+.font-mono-google {
+  font-family: 'Roboto Mono', 'JetBrains Mono', monospace;
+}
+
+/* Scrollbars modernes Material */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(140, 140, 140, 0.3);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(140, 140, 140, 0.5);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  background-color: var(--boardy-bg);
+  color: var(--boardy-text-primary);
+  font-family: 'Plus Jakarta Sans', 'Roboto', sans-serif;
+}
+
+/* React Flow Design System Overrides — Google Material 3 Style */
+.react-flow__minimap {
+  background-color: var(--boardy-sidebar-bg) !important;
+  border: 1.5px solid var(--boardy-border) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12) !important;
+  overflow: hidden;
+}
+
+.react-flow__minimap-mask {
+  fill: rgba(15, 23, 42, 0.16) !important;
+  stroke: var(--boardy-accent) !important;
+  stroke-width: 2.5px !important;
+}
+
+.dark .react-flow__minimap-mask {
+  fill: rgba(0, 0, 0, 0.5) !important;
+  stroke: var(--boardy-accent) !important;
+  stroke-width: 2.5px !important;
+}
+
+.react-flow__minimap-node {
+  fill-opacity: 0.9 !important;
+  stroke-opacity: 0.4 !important;
+}
+
+.react-flow__controls {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 6px !important;
+  background-color: var(--boardy-card-bg) !important;
+  border: 1.5px solid var(--boardy-border) !important;
+  border-radius: 18px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+  overflow: hidden;
+  padding: 6px !important;
+}
+
+.react-flow__controls-button {
+  width: 28px !important;
+  height: 28px !important;
+  border-radius: 10px !important;
+  border: none !important;
+  background-color: transparent !important;
+  color: var(--boardy-text-secondary) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.2s ease !important;
+}
+
+.react-flow__controls-button:hover {
+  background-color: var(--boardy-accent-container) !important;
+  color: var(--boardy-on-accent-container) !important;
+}
+
+.react-flow__controls-button svg {
+  max-width: 14px !important;
+  max-height: 14px !important;
+}
+
+/* Connection Handles — Clean Proximity Dots with generous hit area */
+.react-flow__handle {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 9999px !important;
+  background-color: var(--boardy-accent) !important;
+  border: 2px solid var(--boardy-card-bg) !important;
+  box-shadow: 0 0 0 2px var(--boardy-accent);
+  opacity: 0;
+  transition: opacity 160ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 160ms ease !important;
+  pointer-events: auto !important;
+}
+
+/* Zone de clic/survol étendue pour attraper les points sans viser au pixel près */
+.react-flow__handle::after {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 9999px;
+  background: transparent;
+  pointer-events: auto;
+}
+
+/* Révélation dès le survol de la tuile ou en cours de connexion */
+.react-flow__node:hover .react-flow__handle,
+.react-flow__node.selected .react-flow__handle,
+.react-flow__node.target .react-flow__handle,
+.react-flow__handle.connecting,
+.react-flow__handle.connectingfrom,
+.react-flow__handle.connectingto,
+.react-flow__handle.valid {
+  opacity: 1 !important;
+}
+
+/* Effet survol du point actif : grossit directement sur place sans décalage */
+.react-flow__handle:hover,
+.react-flow__handle.connecting:hover,
+.react-flow__handle.connectingto:hover,
+.react-flow__handle.valid:hover {
+  box-shadow: 0 0 0 4px var(--boardy-accent), 0 0 0 7px rgba(11, 87, 208, 0.25) !important;
+}
+
+/* Group nodes hierarchy: always stay behind content nodes */
+.react-flow__node-group {
+  z-index: 1 !important;
+}
+
+.react-flow__node-group.selected {
+  z-index: 2 !important;
+}
+
+.react-flow__node:not(.react-flow__node-group) {
+  z-index: 10 !important;
+}
+
+.react-flow__node:not(.react-flow__node-group).selected {
+  z-index: 20 !important;
+}
+
+/* Toolbar always on top */
+.react-flow__node-toolbar {
+  z-index: 99999 !important;
+  pointer-events: auto !important;
+}
+
+/* Supprimer les lignes et bordures carrées par défaut du redimensionneur React Flow */
+.react-flow__resize-control.line,
+.react-flow__resize-control-line {
+  border: none !important;
+  border-color: transparent !important;
+  display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+.react-flow__node {
+  outline: none !important;
+  border: none !important;
+}
+
+/* Edges / Connections */
+.react-flow__edge {
+  cursor: pointer !important;
+}
+
+.react-flow__edge-path {
+  stroke: var(--boardy-accent);
+  opacity: 0.85;
+  transition: opacity 140ms ease, stroke-width 140ms ease;
+}
+
+.react-flow__edge:hover .react-flow__edge-path,
+.react-flow__edge.selected .react-flow__edge-path {
+  opacity: 1;
+  stroke-width: 3;
+}
+
+/* TipTap Editor */
+.tiptap {
+  height: 100%;
+  outline: none;
+}
+
+.tiptap p {
+  margin: 0 0 0.35rem;
+}
+
+.tiptap ul,
+.tiptap ol {
+  margin: 0 0 0.35rem;
+  padding-left: 1.15rem;
+}
+
+.tiptap ul {
+  list-style: disc;
+}
+
+.tiptap ol {
+  list-style: decimal;
+}
+
+.tiptap h1,
+.tiptap h2,
+.tiptap h3,
+.tiptap h4 {
+  margin: 0.35rem 0 0.2rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.tiptap h1 {
+  font-size: 1.25rem;
+}
+
+.tiptap h2 {
+  font-size: 1.1rem;
+}
+
+.tiptap h3 {
+  font-size: 1rem;
+}
+
+.tiptap h4 {
+  font-size: 0.9rem;
+}
+
+.tiptap blockquote {
+  border-left: 3px solid var(--boardy-accent);
+  margin: 0.4rem 0;
+  padding-left: 0.75rem;
+  font-style: italic;
+  opacity: 0.85;
+}
+
+.tiptap pre {
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 0.6rem;
+  padding: 0.5rem 0.75rem;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.82em;
+  overflow-x: auto;
+  margin: 0.4rem 0;
+}
+
+.dark .tiptap pre {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.tiptap pre code {
+  background: transparent !important;
+  padding: 0 !important;
+  color: inherit;
+  border-radius: 0;
+}
+
+.tiptap code {
+  border-radius: 0.35rem;
+  background: rgba(0, 0, 0, 0.06);
+  padding: 0.1rem 0.35rem;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.85em;
+}
+
+.dark .tiptap code {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.tiptap hr {
+  border: none;
+  border-top: 1px solid var(--boardy-border);
+  margin: 0.6rem 0;
+}
+
+.tiptap s {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.tiptap p.is-editor-empty:first-child::before {
+  color: #94a3b8;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+

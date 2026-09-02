@@ -1,0 +1,45 @@
+[package]
+name = "boardy"
+version = "0.1.0"
+description = "Boardy — tableaux blancs et notes, en local"
+edition = "2021"
+rust-version = "1.77.2"
+
+[lib]
+name = "boardy_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+# `protocol-asset` : requis par `app.security.assetProtocol` dans
+# tauri.conf.json, sans quoi les images et PDF locaux ne peuvent pas être servis
+# au webview. tauri-build échoue si la feature et la config divergent.
+tauri = { version = "2", features = ["protocol-asset"] }
+tauri-plugin-sql = { version = "2", features = ["sqlite"] }
+# Accès direct à sqlx pour les transactions : le plugin ci-dessus n'expose
+# que des instructions unitaires sur un pool multi-connexions (cf. src/db.rs).
+sqlx = { version = "0.8", default-features = false, features = ["sqlite", "runtime-tokio", "json"] }
+tauri-plugin-fs = "2"
+tauri-plugin-dialog = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+# Hachage du contenu des médias : sert à la fois de nom de fichier et de clé de
+# déduplication.
+sha2 = "0.10"
+
+# --- Intégration GitHub ------------------------------------------------------
+# Les appels partent de Rust et non du webview : le jeton n'est ainsi jamais
+# exposé au contexte JavaScript, et on évite de dépendre du CORS de GitHub.
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls", "gzip"] }
+# Trousseau du système (Secret Service via D-Bus sur Linux). `crypto-rust` évite
+# une dépendance à OpenSSL.
+keyring = { version = "3", features = ["sync-secret-service", "crypto-rust"] }
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "s"
+panic = "abort"
+strip = true

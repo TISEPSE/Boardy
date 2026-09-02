@@ -1,0 +1,5 @@
+# pnpm 11 lit ses réglages ici, plus dans le champ "pnpm" de package.json.
+# esbuild a besoin de son script postinstall pour poser son binaire natif,
+# sans quoi Vite ne démarre pas.
+allowBuilds:
+  esbuild: true
