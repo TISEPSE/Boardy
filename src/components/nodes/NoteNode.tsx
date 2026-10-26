@@ -53,7 +53,7 @@ function NoteNodeComponent({ id, data, selected }: NodeProps<NoteNodeType>) {
   const editor = useEditor({
     extensions: [
       StarterKit.configure({
-        history: { depth: 50 },
+        undoRedo: { depth: 50 },
         heading: { levels: [1, 2, 3, 4] },
       }),
     ],
